@@ -62,10 +62,22 @@ void setup() {
   display.setCursor(0,10);
   display.println("Dan Smalley 2023");
   display.setCursor(0,20);
-  display.println("Version 1.0");
+  display.println("Version 1.1");
   display.display();
 
-  sleep(5);
+  sleep(2);
+
+  // Display github link
+  display.clearDisplay();
+  display.setCursor(0,0);
+  display.println("github.com/");
+  display.setCursor(0,10);
+  display.println("dan-smalley/");
+  display.setCursor(0,20);
+  display.println("BinaryKeeb");
+  display.display();
+
+  sleep(3);
 
   // Draw initial text
   drawBits();
